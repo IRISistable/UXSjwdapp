@@ -2,121 +2,22 @@
 <html>
 <head>
 	<title>FLOREIA</title>
+  <link rel="stylesheet" href="CC1.css">
 </head>
-<style type="text/css">
-	body{
-    margin: 0;
-    padding: 0;
-    font-size: 15px;
-}
-.logo {
-  float: left;
-}
-/* ~~ Top Navigation Bar ~~ */
-
-#nav {
-    width: 100%;
-    float: left;
-    margin: 0 0 1em 0;
-    padding: 0;
-    background-color: white;
-}
-#nav ul {
-    list-style: none;
-    width: 800px;
-    margin: 0 auto;
-    padding: 0; 
-	background-color:  #191a1a
-;}
-#nav li {
-    float: left;
-    background-color:  #191a1a
-;}
-#nav li a {
-    display: block;
-    padding: 8px 15px;
-    text-decoration: none;
-    font-weight: bold;
-    color: white;
-    background-color:  #191a1a
-;}
-#nav li:first-child a {
-    background-color:  #191a1a
-;}
-#nav li a:hover {
-    color: #c00;
-    background-color: black;}
-
-img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-	}
-
-
-{
-    box-sizing: border-box;
-}
-
-    /* Three image containers (use 25% for four, and 50% for two, etc) */
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-}
-
-/* Clear floats after image containers */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.row {
-  display: flex;
-}
-
-.column {
-  flex: 33.33%;
-  padding: 5px;
-}
-
-/* Container holding the image and the text */
-.container {
-    position: relative;
-}
-
-.text-slogan {
-    position: absolute;
-    top: 300px;
-    left: 60px;
-    color: white;
-    font-size: 50px;
-    font-weight: bold;
-}
-/* Bottom left text */
-.text-block {
-    position: absolute;
-    bottom: 100px;
-    left: 60px;
-    background-color: white;
-    color: black;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-</style>
 
 <body>
-	 <div id="nav">
+  <nav>
 		<ul>
-		<li><a href="#"><img class="logo" src="Junior Web Developer Challenge/img/logo-main.png"></a></li>
-		<li><a href="#">PRODUCTS</a></li>			<li><a href="#">STORY</a></li>
+    <li><a href="#"><img class="logo-img" src="Junior Web Developer Challenge/img/logo-main.png"></a>
+		<li><a href="#">PRODUCTS</a></li>
+    <li><a href="#">STORY</a></li>
 		<li><a href="#">SHOP</a></li>
 		<li><a href="#">CONTACT</a></li>
 		</ul>
-
+  </nav>
+  </div>
 <div class="container">
-  <img src="Junior Web Developer Challenge/img/bg1.png" alt="bg1" style="width:100%;">
+  <div><img class="cover-img" src="Junior Web Developer Challenge/img/bg1.png"></div>
   <div class="text-slogan"> <div>Made for and from</div>  <div>Mother Earth</div> 
   </div>
   <div class="text-block"> 
@@ -129,20 +30,13 @@ img{
 <br>
 	<div class="row">
   <div class="column">
-  	<img src="Junior Web Developer Challenge/img/1.jpg" alt="1" style="width:100% padding-top: 8px;
-    padding-bottom: 8px;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;">
+  	<img class="featured-img" src="Junior Web Developer Challenge/img/1.jpg" alt="1">
+    </div>
+  <div class="column">
+    <img class="featured-img" src="Junior Web Developer Challenge/img/2.jpg" alt="2">
   </div>
   <div class="column">
-    <img src="Junior Web Developer Challenge/img/2.jpg" alt="2" style="width:100% padding-top: 8px;
-    padding-bottom: 8px;
-    border-top: 2px solid black;border-bottom: 2px solid black;">
-  </div>
-  <div class="column">
-    <img src="Junior Web Developer Challenge/img/3.jpg" alt="3" style="width:100% padding-top: 8px;
-    padding-bottom: 8px;
-    border-top: 2px solid black; border-bottom: 2px solid black;">
+    <img class="featured-img" src="Junior Web Developer Challenge/img/3.jpg" alt="3">
   </div>
 </div>
 </body>
